@@ -7,3 +7,32 @@ body{
   font-family: "Manrope", sans-serif;
 }
 
+.myContainer {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.myGradientText {
+  background: linear-gradient(to right, #7e22ce, #a855f7, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.myGradient {
+  background: linear-gradient(to right, #6366f1,#7e22ce);
+}
+
+.stath3{
+  color: white;
+  font-size: clamp(1.5rem,4vw,3rem);
+  font-weight: 700;
+}
+.statP{
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+.line{
+  width: 2px;
+  height: 70px;
+  background-color: rgba(216, 157, 255, 0.5);
+}

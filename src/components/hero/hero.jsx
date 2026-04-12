@@ -17,22 +17,22 @@ const hero = () => {
           Supercharge Your <br /> Digital Workflow
         </h1>
         <p className="text-lg text-[#627382]">
-          Access premium AI tools, design assets, templates, and productivity{" "}
+          Access premium AI tools, design assets, templates, and productivity
           <br />
           software—all in one place. Start creating faster today. Explore
           Products
         </p>
         <div className="flex items-center gap-5 mt-8">
-          <button className="bg-[linear-gradient(to_right,#6366f1,#7e22ce)] p-2.5 md:p-3 lg:p-4 rounded-full text-white font-bold">
+          <button className="myGradient p-2.5 md:p-3 lg:p-4 rounded-full text-white font-bold">
             Explore Products
           </button>
-          <button className="flex items-center justify-center p-2.5 md:p-3 lg:p-4 rounded-full border font-medium gap-2">
+          <button className="flex items-center justify-center p-2.5 md:p-3 lg:p-4 rounded-full border font-medium gap-2 myGradientText">
             <CiPlay1 className="" />
             Watch Demo
           </button>
         </div>
       </div>
-      <div className='mt-10'>
+      <div className="mt-10">
         <img src={Banner} alt="" />
       </div>
     </div>
