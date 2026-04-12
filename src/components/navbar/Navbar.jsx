@@ -7,7 +7,7 @@ const Navbar = () => {
   const [menu,setMenu] = useState(false)
   return (
     <nav>
-      <div className="md:w-10/12 w-11/12 lg:w-9/10 mx-auto flex justify-between items-center my-5">
+      <div className="md:w-10/12 w-11/12 lg:w-9/12 mx-auto flex justify-between items-center my-5">
         <span className="flex items-center gap-3">
           <span>
             <RiMenuFill
@@ -15,7 +15,7 @@ const Navbar = () => {
               className="text-xl font-bold lg:hidden mr-5"
             />
             {menu ? (
-              <ul className=" absolute bg-purple-400 text-white mt-2 py-2 pl-2 pr-4 rounded-md flex flex-col gap-2 font-semibold lg:hidden">
+              <ul className=" absolute bg-purple-400 text-white mt-2 py-2 pl-2 pr-4 rounded-md flex flex-col gap-2 font-semibold lg:hidden cursor-pointer">
                 <NavLi />
                 <button className="btn btn-sm text-base btn-soft">
                   Login
