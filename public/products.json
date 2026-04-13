@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image":"../src/assets/products/ai-writing.png",
+    "image":"https://i.ibb.co.com/QvrztSSn/ai-writing.png",
     "title": "AI Writing Pro",
     "badge": "Best Seller",
     "price": 29,
@@ -15,7 +15,7 @@
   },
   {
     "id": 2,
-    "image": "../src/assets/products/design-tool.png",
+    "image": "https://i.ibb.co.com/gZ2B2Qpr/design-tool.png",
     "title": "Design Templates Pack",
     "badge": "Popular",
     "price": 49,
@@ -25,7 +25,7 @@
   },
   {
     "id": 3,
-    "image": "../src/assets/products/camera.png",
+    "image": "https://i.ibb.co.com/W9PQpt7/camera.png",
     "title": "Premium Stock Assets",
     "badge": "New",
     "price": 19,
@@ -35,7 +35,7 @@
   },
   {
     "id": 4,
-    "image": "../src/assets/products/automation.png",
+    "image": "https://i.ibb.co.com/HDBChhsg/automation.png",
     "title": "Automation Toolkit",
     "badge": "Popular",
     "price": 79,
@@ -45,7 +45,7 @@
   },
   {
     "id": 5,
-    "image": "../src/assets/products/portfolio.png",
+    "image": "https://i.ibb.co.com/LDNtgfkJ/portfolio.png",
     "title": "Resume Builder Pro",
     "badge": "New",
     "price": 15,
@@ -55,7 +55,7 @@
   },
   {
     "id": 6,
-    "image": "../src/assets/products/social-media.png",
+    "image": "https://i.ibb.co.com/NdGsMQk1/social-media.png",
     "title": "Social Media Content Kit",
     "badge": "Best Seller",
     "price": 39,

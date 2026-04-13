@@ -10,8 +10,8 @@ const productsFetch = async () => {
 }
 
 const App = () => {
-  const fetchProduct = useMemo(() => productsFetch(), []);
   // const fetchProduct = productsFetch()
+  const fetchProduct = useMemo(() => productsFetch(), []);
   const [cardArr,setCardArr] = useState([])
   return (
     <div>
