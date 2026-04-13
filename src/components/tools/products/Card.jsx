@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FcCheckmark } from 'react-icons/fc';
+import { GiCheckMark } from 'react-icons/gi';
+import { toast } from 'react-toastify';
 
-const Card = ({ product }) => {
+const Card = ({ product,cardArr, setCardArr}) => {
+  const [isSelected,setIsSelected] = useState(true)
+  const cardBtn = (product) =>{
+    setIsSelected(false);
+    
+    const existCard = cardArr.find(i => i.id === product.id)
+    if(!existCard){
+      const cardUpdate = [...cardArr, product];
+      setCardArr(cardUpdate)
+      toast.success("Item added to cart!")
+    }
+    
+  }
+
   const badgeColor = (badge) => {
     switch(badge){
       case "Best Seller":
@@ -31,15 +46,27 @@ const Card = ({ product }) => {
         </span>
       </p>
       <ul className="flex flex-col gap-2">
-        {product.features.map((feature) => (
-          <li className="flex items-center gap-2 text-[#627382]">
+        {product.features.map((feature, ind) => (
+          <li className="flex items-center gap-2 text-[#627382]" key={ind}>
             <FcCheckmark className="text-xl" />
             {feature}
           </li>
         ))}
       </ul>
-      <div className="myGradient text-center py-3.75 rounded-3xl font-bold text-white cursor-pointer">
-        <button>Buy Now</button>
+      <div
+        onClick={() => cardBtn(product)}
+        className={`${isSelected ? "myGradient" : "bg-green-500"} flex justify-center py-3.75 rounded-3xl font-bold text-white cursor-pointer`}
+      >
+        <button type="button">
+          {isSelected === true ? (
+            "Buy Now"
+          ) : (
+            <span className="flex items-center gap-2">
+              <GiCheckMark />
+              Added to Cart
+            </span>
+          )}
+        </button>
       </div>
     </div>
   );

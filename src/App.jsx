@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useMemo, useState } from 'react';
 import Navbar from './components/navbar/Navbar';
 import Hero from "./components//hero/hero";
 import Stat from './components/stat/Stat';
@@ -10,14 +10,16 @@ const productsFetch = async () => {
 }
 
 const App = () => {
-  const fetchProduct = productsFetch()
+  const fetchProduct = useMemo(() => productsFetch(), []);
+  // const fetchProduct = productsFetch()
+  const [cardArr,setCardArr] = useState([])
   return (
     <div>
-      <Navbar />
+      <Navbar cardArr={cardArr}/>
       <Hero />
       <Stat />
       <Suspense fallback={<p>Loading......</p>}>
-        <Tools fetchProduct={fetchProduct} />
+        <Tools fetchProduct={fetchProduct} cardArr={cardArr} setCardArr={setCardArr}/>
       </Suspense>
     </div>
   );

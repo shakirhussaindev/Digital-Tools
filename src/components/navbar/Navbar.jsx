@@ -3,7 +3,7 @@ import { IoCartOutline } from 'react-icons/io5';
 import { RiMenuFill } from 'react-icons/ri';
 import NavLi from './NavLi';
 
-const Navbar = () => {
+const Navbar = ({cardArr}) => {
   const [menu,setMenu] = useState(false)
   return (
     <nav>
@@ -17,9 +17,7 @@ const Navbar = () => {
             {menu ? (
               <ul className=" absolute bg-purple-400 text-white mt-2 py-2 pl-2 pr-4 rounded-md flex flex-col gap-2 font-semibold lg:hidden cursor-pointer">
                 <NavLi />
-                <button className="btn btn-sm text-base btn-soft">
-                  Login
-                </button>
+                <button className="btn btn-sm text-base btn-soft">Login</button>
               </ul>
             ) : (
               ""
@@ -33,7 +31,13 @@ const Navbar = () => {
           <NavLi />
         </ul>
         <div className="flex justify-between items-center gap-5">
-          <IoCartOutline className="text-2xl cursor-pointer" />
+          <div className="relative cursor-pointer">
+            <div className="w-10 h-10 rounded-full hover:bg-gray-100 flex items-center justify-center">
+              <IoCartOutline className="text-2xl" />
+            </div>
+            {cardArr.length > 0 && (
+            <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-medium w-5 h-5 flex items-center justify-center rounded-full"> {cardArr.length}</span>)}
+          </div>
           <button className="cursor-pointer text-xl font-semibold hidden md:block">
             Login
           </button>

@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import Products from './products/Products';
+import Cart from './cart/Cart';
 
-const Tools = ({ fetchProduct }) => {
+const Tools = ({ fetchProduct,cardArr, setCardArr }) => {
   const [toolBtn, setToolBtn] = useState("active");
 
+
   return (
-    <div className='w-9/12 mx-auto'>
+    <div className="w-9/12 mx-auto">
       <h2 className="text-center text-[clamp(1.5rem,3vw,3rem)] font-extrabold">
         Premium Digital Tools
       </h2>
@@ -24,12 +26,24 @@ const Tools = ({ fetchProduct }) => {
           <button
             onClick={() => setToolBtn("inactive")}
             className={`${toolBtn === "inactive" ? "myGradient text-white" : ""} font-bold py-3.5 px-6 rounded-full`}
-          >Cart (2)
+          >
+            Cart ({cardArr.length})
           </button>
         </div>
       </div>
       <div>
-        <Products fetchProduct={fetchProduct}/>
+        {toolBtn === "active" && (
+          <Products
+            fetchProduct={fetchProduct}
+            cardArr={cardArr}
+            setCardArr={setCardArr}
+          />
+        )}
+      </div>
+      <div>
+        {toolBtn === "inactive" && (
+          <Cart cardArr={cardArr} setCardArr={setCardArr} />
+        )}
       </div>
     </div>
   );
