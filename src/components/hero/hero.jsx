@@ -14,7 +14,8 @@ const hero = () => {
           </h2>
         </div>
         <h1 className="text-[clamp(2rem,4vw,5rem)] text-[#101727] font-extrabold py-4">
-          Supercharge Your <br /> Digital Workflow
+          Supercharge Your <br />{" "}
+          <span className="myGradientText">Digital Workflow</span>
         </h1>
         <p className="text-lg text-[#627382]">
           Access premium AI tools, design assets, templates, and productivity
@@ -32,7 +33,7 @@ const hero = () => {
           </button>
         </div>
       </div>
-      <div className="mt-10">
+      <div className="mt-10 shadow-2xl">
         <img src={Banner} alt="" />
       </div>
     </div>
