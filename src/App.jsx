@@ -3,6 +3,7 @@ import Navbar from './components/navbar/Navbar';
 import Hero from "./components//hero/hero";
 import Stat from './components/stat/Stat';
 import Tools from './components/tools/Tools';
+import GetStarted from './components/GetStarted';
 
 const productsFetch = async () => {
   const res = await fetch("/products.json")
@@ -21,6 +22,7 @@ const App = () => {
       <Suspense fallback={<p>Loading......</p>}>
         <Tools fetchProduct={fetchProduct} cardArr={cardArr} setCardArr={setCardArr}/>
       </Suspense>
+      <GetStarted/>
     </div>
   );
 };
