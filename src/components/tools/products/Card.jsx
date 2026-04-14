@@ -28,7 +28,7 @@ const Card = ({ product,cardArr, setCardArr}) => {
     }
   }
   return (
-    <div className="border border-[#e9e9e9] rounded-2xl px-6 pb-6 pt-2.5 shadow-sm relative space-y-4">
+    <div className="border border-[#e9e9e9] rounded-2xl px-6 pb-6 pt-2.5 shadow-sm hover:shadow-lg relative space-y-4">
       <span
         className={`absolute right-6 py-1.5 px-3 rounded-full ${badgeColor(product.badge)}`}
       >

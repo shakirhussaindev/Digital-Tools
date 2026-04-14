@@ -31,7 +31,7 @@ const GetStarted = () => {
       <div className="max-w-7xl mx-auto text-center">
 
         <div className="mb-16">
-          <h2 className="text-5xl font-extrabold text-[#111827] mb-4">
+          <h2 className="text-[clamp(1.5rem,3vw,3rem)] font-extrabold text-[#111827] mb-4">
             Get Started In 3 Steps
           </h2>
           <p className="text-gray-500 text-lg">
