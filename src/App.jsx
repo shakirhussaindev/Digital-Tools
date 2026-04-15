@@ -5,6 +5,7 @@ import Stat from './components/stat/Stat';
 import Tools from './components/tools/Tools';
 import GetStarted from './components/GetStarted';
 import Pricing from './components/pricing/Pricing';
+import Footer from './components/Footer';
 
 const productsFetch = async () => {
   const res = await fetch("/products.json")
@@ -25,6 +26,7 @@ const App = () => {
       </Suspense>
       <GetStarted/>
       <Pricing/>
+      <Footer/>
     </div>
   );
 };
