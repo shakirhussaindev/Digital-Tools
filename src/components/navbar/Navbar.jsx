@@ -28,7 +28,7 @@ const Navbar = ({cardArr}) => {
           </h2>
         </span>
         <ul className="lg:flex gap-10 font-semibold text-[#101727] cursor-pointer hidden">
-          <NavLi />
+          <NavLi className="hover:text-purple-500"/>
         </ul>
         <div className="flex justify-between items-center gap-5">
           <div className="relative cursor-pointer">
