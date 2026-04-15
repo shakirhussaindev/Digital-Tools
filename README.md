@@ -1,6 +1,6 @@
 # DigiTools
 
-A modern platform where creators and professionals can find the premium digital tools they need. It is built with a focus on clean design and user experience.
+A modern platform where creators and professionals can find the premium digital tools they need. It is built with a focus on clean design and safe user experience.
 
 ### 🛠️ Technology Used
 * **React**
@@ -16,4 +16,4 @@ A modern platform where creators and professionals can find the premium digital 
 3. **Fully Responsive UI:** A perfect and modern design optimized for all devices, from mobile to desktop.
 
 ### 🔗 Live Project Link
-View the live project here: (https://digital-tools-opal.vercel.app/)
+View the live project here: [Digital Tools Live](https://digital-tools-opal.vercel.app/)
